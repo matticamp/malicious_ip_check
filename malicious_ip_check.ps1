@@ -4,7 +4,7 @@
 $WebResponse = Invoke-WebRequest "https://lists.blocklist.de/lists/all.txt"
 
 #PROMPT THE USER FOR A PATH TO AN OUTPUT FILE
-$output=Read-Host -Prompt "Enter your output file path: "
+$output=Read-Host -Prompt "Enter your output file path "
 
 #GRAB THE CONTENTS OF THE WEBPAGE AND OUTPUT THEM TO THE DESTINATION FILE DEFINED BY THE USER
 
@@ -16,7 +16,7 @@ $array=Get-Content $output
 
 #PROMPT USER FOR AN IP ADDRESS TO BE CHECKED AGAINST THE DATABASE
 
-$ip=Read-Host -Prompt "Enter an IP address: "
+$ip=Read-Host -Prompt "Enter an IP address "
 
 #IF THE ENTERED IP IS LISTED IN THE DATABASE, RETURN 'MALICIOUS', OTHERWISE 'NO HIT FOUND'
 
