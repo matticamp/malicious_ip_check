@@ -21,7 +21,7 @@ $ip=Read-Host -Prompt "Enter an IP address "
 #IF THE ENTERED IP IS LISTED IN THE DATABASE, RETURN 'MALICIOUS', OTHERWISE 'NO HIT FOUND'
 
 if ($array -contains $ip){
-'Malicious'
+'Malicious!'
 } Else {
 'No hit found'
 }
